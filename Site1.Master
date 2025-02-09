@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="LibraryManagement.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+
+    <title>LMS</title>
+
+    <meta charset="utf-8" />
+        <link rel="shortcut icon" href="../LogoImg/logoIcon.ico" />
+    <meta name="viewport" content="width-device",initial-scale="1" />
+    <%--1 Bootstrap Css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--2 Datatable Css--%>
+    <link href="datatable/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--3 Fontawesome Css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <%--4 Jquery js--%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%--5 Popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--6 Bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+<%--            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">--%>
+
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="Default.aspx">
+                    <img src="LogoImg/logoIcon.ico" width="49" height="49" alt="logo" />Library Application</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="Default.aspx" class="nav-link"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><b>Library Collection</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><b>Archieves</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><b>Publications</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><b>Gallary</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><b>Contact Us</b></a>
+                        </li>
+                    </ul>
+                  
+                    
+                    
+                    <%-- Navbar right icon --%>
+                    <div class="pmg-navbar-right-icon ml-auto">
+                    <div class="pmg-navbar-right-icon ml-auto">
+    <a href="SignUp.aspx" class="btn btn-secondary">Sign Up</a>
+    <a href="Login.aspx" class="btn btn-success">Sign In</a>
+</div>
+
+                    </div>
+                </div>
+
+            </nav>
+
+            <div class="jumbotron text-center alert alert-primary" style="margin-bottom: 0">
+                <h1>Library Management System</h1>
+                <p>Building Community. Insipiring Readers. Expanding Book Access</p>
+
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2 border border-info">
+                        <h2>Filter</h2>
+                        <h5>Category:</h5>
+                        <div class="fakeimg">Fake Image</div>
+                        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                        <h3>Some Links</h3>
+                        <p>Top Search.</p>
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                        <hr class="d-sm-none">
+                    </div>
+                    <div class="col-sm-10 border border-info">
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+
+
+                </div>
+            </div>
+            <br />
+            <div class="jumbotron text-center alert alert-danger" style="margin-bottom: 0; border: 2px solid red">
+                <p>Footer</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-pad">
+                                <h4>Heading</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a>Payment Center</li>
+                                    <li><a href="#"></a>News And Updates</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-pad">
+                                <h4>Heading</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a>Website</li>
+                                    <li><a href="#"></a>Disclaimer</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Follow Us</h4>
+                            <ul class="social-network social-circle">
+                                <li><a href="#" title="Facebook"><i class="fa fa-facebook">Facebook</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 fa-copyright border-dark">
+                            <p class="text-center">
+                                &copy; Copyright 2024 - Sagar Ss. All Rights Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
