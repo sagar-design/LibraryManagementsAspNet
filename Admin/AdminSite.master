@@ -38,7 +38,7 @@
     <form id="form1" runat="server">
         <div>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-                <a class="navbar-brand" href="AdminHome.aspx">
+                <a class="navbar-brand" href="AdminHomePage.aspx">
                     <img src="../LogoImg/logoIcon.ico" alt="logo" width="40" height="40" />LMS Application</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
